@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:lift="http://liftweb.net/">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Criterion BI</title>
+    <lift:CSS.fancyType />
+    <script id="jquery" src="/classpath/jquery.js" type="text/javascript"/>
+    <script id="json" src="/classpath/json.js" type="text/javascript"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers--> 
+    <script type="text/javascript" src="/classpath/js/css3-mediaqueries.js"></script> 
+    <link rel="stylesheet" href="/classpath/css/superfish.css" type="text/css" media="screen"/> 
+    <link rel="stylesheet" href="/classpath/css/superfish-vertical.css"  type="text/css" media="screen" /> 
+    <link rel="stylesheet" href="/classpath/css/jquery-ui-1.8.14.custom.css" type="text/css" media="screen"/> 
+    <link rel="stylesheet" href="/classpath/css/cbishell.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/classpath/js/jquery-ui-1.8.14.custom.min.js"/> 
+    <script type="text/javascript" src="/classpath/js/hoverIntent.js"/>
+    <script type="text/javascript" src="/classpath/js/superfish.js"/>
+    <script type="text/javascript" src="/classpath/js/supersubs.js"/>
+    <script language="JavaScript"> $(function() { $('#menucol').hide(); }); </script>
+    <script class="lift:GetMenuSnippet.startup"></script>
+    <script class="lift:GetMenuSnippet.functions"></script>
+    <script language="JavaScript"> window.onbeforeunload = function() { return "You are about to leave the Criterion BI Console."; } </script>
+    </head>
+<body>
+<div class="container ui-corner-all"> 
+    <div id="col1" class="column">
+        <div id="logo" class=" ui-corner-all" >
+            <img class=" ui-corner-all" src='/images/name_small.png' />
+        </div>
+        <lift:CBIMenu.label>
+            <span id="menuLabel">Your Solutions</span>
+        </lift:CBIMenu.label>
+        <div id="menuload">Loading menu...<br/><img src="images/ajax-loader.gif" /></div>
+        <div id="menucol">
+          <div id="cbimenu"> this will be replaced </div>
+        </div>
+        <div id="logo"> </div>
+    </div>
+    <div id="col2" class="column">
+        <div id="utils" >
+          <div lift="comet?type=Clock"> time: <span id="clock_time">replace</span></div>
+          <lift:CBIMenu.reload><a id="reloadLink" href="javascript://">Reload</a></lift:CBIMenu.reload>
+            <a id="cbilogout" href="logout">Logout</a> 
+        </div>
+        <div id="mainwindow"> <lift:bind name="content" /> </div>
+    </div>
+</div>
+</body>
+</html>

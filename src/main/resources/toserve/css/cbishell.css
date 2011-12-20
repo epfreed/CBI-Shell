@@ -1,0 +1,180 @@
+html, body{
+  background: #074577;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+html {
+  height: 100%;
+}
+
+.container {
+    background-color: #F7FAFC;
+    border: 1px;
+    border-color: grey;
+    border-style: solid;
+    min-width: 960px;
+    color: #555;
+    position: absolute;
+    top: .25em;
+    bottom: .25em;
+    right: 0;
+    left: 0;
+    overflow: auto;
+
+    -moz-border-radius-topright: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    -khtml-border-top-left-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+/*-----------------col 1 ----------*/
+
+#col1 {
+    float: left;
+    width: 145px;
+
+}
+
+
+#logo img {
+    width: 90%;
+    margin: 1em;
+    border: 1px;
+    border-color: grey;
+    border-style: solid;
+    padding: .5em
+}
+
+#menucol {
+   min-width: 150px;
+   min-height: 100px;
+   overflow: visible;
+   margin-left: 1em;
+}
+
+.sf-menu{
+     margin-bottom: 1em;
+     margin-top: 1em;
+}
+
+#menuLabelComp  {
+    font-size: 1.3em;
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    text-align: center;
+    
+} 
+
+#menuLabelName{
+    margin-top: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    font-size: 1.2em; 
+    text-align: center;
+}
+
+#menuload{
+    margin-top: 3em;	
+    font-style: italic;
+}
+
+#menuload img{
+    margin-top: 1em;	
+}
+
+#cbimenu img{
+  float:left;
+  margin-right: 1em;
+} 
+/*----------------col 2----------------*/
+
+#col2 {
+    float: right;
+    position:absolute;
+    left: 165px;
+    right: 1em;
+}
+
+#utils {
+    width: 90%;
+    float:right;
+    text-align: right;
+    margin-bottom: .5em;
+    padding-top: .5em;
+    margin-right: .5em;
+}
+
+#utils A:link {
+    text-decoration: none;
+    color: #555;
+    margin-right: 1em;
+}
+
+#utils A:visited {
+    text-decoration: none;
+    color:  #555;
+}
+
+#utils A:active {
+    text-decoration: none;
+    color: red;
+}
+
+#utils A:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#mainwindow{
+    width: 100%;
+    margin-top: 2.5em;
+}
+
+.tab-content {
+    border: 1px;
+    border-color: gray;
+    border-style: solid;
+    width: 100%;
+    overflow: auto;
+}
+
+#tabwindow {
+    width: 100%;
+    min-height: 50em;
+    background-image: url('http://www.criterionbi.com/images/symbol_med_clear_shadow.png');
+    background-repeat: no-repeat;
+    background-position:center; 
+}
+
+#tabHeader  a {
+    min-width: 1em;
+}
+
+#tabHeader span.ui-icon-close {
+    float:right;
+    margin-top: 0em;
+}
+
+.footer {
+    position: absolute; 
+    bottom: 1em;
+    right: 2em;
+}
+

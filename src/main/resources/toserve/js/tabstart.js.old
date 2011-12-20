@@ -1,0 +1,9 @@
+(
+function($){
+    $('#tabs').tabs('remove',0).tabs( 'add', '#tabs-1', 'Welcome to CriterionBI' )
+    $("#tabs-1").html('<span>this should be a welcome message or webpage</span>')
+    $('#tabs').tabs( 'select' , 'tabs-1')
+    $('a[href="#tabs-1"]').after("<span class='ui-icon ui-icon-close'>Remove Tab</span>")
+}
+);
+
