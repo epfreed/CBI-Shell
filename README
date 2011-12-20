@@ -4,4 +4,6 @@ It allows users to access reports, dashboards, analysis, etc.
 
 It runs as a separate webapp and needs Jasig CAS as a SSO to allow access. There is a bit config to set it up...more info coming. 
 
-It is written in Scala, uses Lift, and mostly works.
+It is written in Scala, uses Lift, and mostly works (but takes a fair amount of setup, and fiddeling with the default Pentaho setup)
+
+You can see a screenshot under the test directory
