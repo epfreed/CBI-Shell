@@ -1,0 +1,7 @@
+The CBIShell is a frontend to the Pentaho Bi-Server that is easier to use than the default PUC.
+
+It allows users to access reports, dashboards, analysis, etc. 
+
+It runs as a separate webapp and needs Jasig CAS as a SSO to allow access. There is a bit config to set it up...more info coming. 
+
+It is written in Scala, uses Lift, and mostly works.
